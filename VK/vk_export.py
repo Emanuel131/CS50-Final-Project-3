@@ -3,11 +3,11 @@
 # https://oauth.vk.com/authorize?client_id=token&display=page&redirect_uri=
 # https://oauth.vk.com/blank.html&scope=friends&response_type=token&v=5.52
 #
-# Application ID:	6760256
+# Application ID:
 #
 # scope = 2 (friends) + 4 (photos) + 262144 (groups) + 65536 (offline)
 #
-# Our access_token=aa34d59868d72a146a250d1832c2b08519e79a34fdfc2b6f27d5ad44b2b100e0d5492c26166c5a6aed028
+# Our access_token=
 #
 # I am going to test request and vk_requests packages
 
@@ -26,7 +26,7 @@ cur = conn.cursor()
 def main():
 
     # Assigned token var
-    token = 'aa34d59868d72a146a250d1832c2b08519e79a34fdfc2b6f27d5ad44b2b100e0d5492c26166c5a6aed028'
+    token = ''
 
     # List of params needed for the request
     params = {"group_id": 1, "count": 10, "fields": ['sex'], "v": 5.92, "access_token": token}

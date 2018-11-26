@@ -1,0 +1,40 @@
+@font-face
+{
+	font-family: "SexyShout";
+	src: url("../static/fonts/SexyShoutFreeFont.ttf");
+}
+
+.navbar
+{
+	background-color: #FFC0CB;
+}
+
+nav .navbar-brand
+{
+	/* font size for the logo*/
+	font-size: xx-large;
+	font-family: "SexyShout";
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #255da6;
+}
+
+nav .navbar-brand .white
+{
+    color: #ffffff;
+}
+
+.img-thumbnail
+{
+	background-color: #FFC0CB;
+}
+
+.btn-outline-primary {
+	background-color: transparent;
+	border-color: #ffffff;
+}
+
+

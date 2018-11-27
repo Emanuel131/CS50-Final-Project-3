@@ -3,7 +3,7 @@
 # https://oauth.vk.com/authorize?client_id=token&display=page&redirect_uri=
 # https://oauth.vk.com/blank.html&scope=friends&response_type=token&v=5.52
 #
-# Application ID:
+# Application ID:	
 #
 # scope = 2 (friends) + 4 (photos) + 262144 (groups) + 65536 (offline)
 #
@@ -26,7 +26,7 @@ cur = conn.cursor()
 def main():
 
     # Assigned token var
-    token = ''
+    token =
 
     # List of params needed for the request
     params = {"group_id": 1, "count": 10, "fields": ['sex'], "v": 5.92, "access_token": token}
@@ -59,11 +59,18 @@ def main():
     # Cleaning the database
     cleanup()
 
+    """
+    link_l = []
+    for row in cur.execute("SELECT * FROM members ORDER BY RANDOM() LIMIT 5"):
+        print(row[5])
+        link_l.append(row[5])
+    """
+
 
 # Database upload func
 def db_upload(resp):
     for i in resp["items"]:
-        cur.execute("INSERT INTO members (id, first_name, last_name, sex, photo_link) VALUES (:id, :f_n, :l_n, :s, :p_l)",
+        cur.execute("INSERT INTO members (vk_id, first_name, last_name, sex, photo_link) VALUES (:id, :f_n, :l_n, :s, :p_l)",
                     {"id": i.get('id'), "f_n": i.get('first_name'), "l_n": i.get('last_name'), "s": i.get("sex"), "p_l": i.get("photo_max_orig")})
 
         # Saving changes
@@ -81,6 +88,9 @@ def cleanup():
 
     # Excluding females without an avatar
     cur.execute("DELETE FROM members WHERE photo_link = 'https://vk.com/images/camera_400.png?ava=1'")
+
+    # Excluding deactivated females
+    cur.execute("DELETE FROM members WHERE photo_link = 'https://vk.com/images/deactivated_400.png'")
 
     # Saving changes
     conn.commit()

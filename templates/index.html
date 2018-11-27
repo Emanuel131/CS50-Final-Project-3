@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block main%}
+  <!-- http://jquery.com/ -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- app's own JavaScript -->
+<script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+	<h1 class="display-1 text-center pt-5">WHO IS HOTTER ?</h1>
+  	<div class="container mt-5">
+    		<div class="row" id="img_row">
+          <div class="col-sm-6 text-center" id="left_div">
+            <img src={{link1}} id="left_pic" alt="Babe1" class="img-thumbnail" width="400" height="400">
+          </div>
+          <div class="col-sm-6 text-center" id="right_div">
+            <img src={{link2}} id="right_pic" alt="Babe2" class="img-thumbnail center" width="400" height="400">
+          </div>
+    		</div>
+        <form>
+        <div class="row mt-2">
+            <div class="col-sm-6 text-center">
+              <button class="btn btn-primary btn-lg" value="left" type="button">HER</button>
+            </div>
+            <div class="col-sm-6 text-center">
+              <button class="btn btn-primary btn-lg" value="right" type="button">HER</button>
+            </div>
+  	    </div>
+        </form>
+        <div class="row mt-2">
+            <div class="col-sm-6 text-center">
+              <p class="text-center">{{link1}}</p>
+            </div>
+            <div class="col-sm-6 text-center">
+              <p class="text-center">{{link2}}</p>
+            </div>
+        </div>
+        <div class="row mt-7">
+            <div class="col-sm-6 text-center">
+              <p class="text-center">{{id1}}</p>
+            </div>
+            <div class="col-sm-6 text-center">
+              <p class="text-center">{{id2}}</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

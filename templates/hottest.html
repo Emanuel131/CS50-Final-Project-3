@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block main %}
+	<h1 class="display-1 text-center pt-5">THE HOTTEST</h1>
+  	<div class="container mt-5">
+    	<div class="row" id="img_row">
+          <div class="col-sm-12 text-center" id="left_div">
+            <img src={{link}} id="left_pic" alt="Hottie" class="img-thumbnail" width="400" height="400">
+          </div>
+        </div>
+        <div class="row mt-7">
+            <div class="col-sm-12 text-center">
+              <p class="text-center">{{link}}</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

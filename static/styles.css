@@ -32,9 +32,9 @@ nav .navbar-brand .white
 	background-color: #FFC0CB;
 }
 
-.btn-outline-primary {
-	background-color: transparent;
-	border-color: #ffffff;
+.btn-primary {
+	background-color: #FFC0CB;
+	border-color: #FFC0CB;
 }
 
 

@@ -1,4 +1,5 @@
-import sqlite3
+import os
+from flask_sqlalchemy import SQLAlchemy
 import json
 from flask import Flask, redirect, render_template, request
 from member import Member

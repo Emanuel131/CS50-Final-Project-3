@@ -20,6 +20,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./phpLiteAdmin/HSE.db'
 # Initiating db object
 db = SQLAlchemy(app)
 
+
 # Table class
 class Members(db.Model):
     __tablename__ = 'members'

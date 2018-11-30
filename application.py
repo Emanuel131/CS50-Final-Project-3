@@ -1,4 +1,3 @@
-import os
 from flask_sqlalchemy import SQLAlchemy
 import json
 from flask import Flask, redirect, render_template, request
@@ -6,9 +5,33 @@ from member import Member
 
 # Configure application
 app = Flask(__name__)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite:///./phpLiteAdmin/HSE.db'
+db = SQLAlchemy(app)
 
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
+
+
+class Members(db.Model):
+    __tablename__ = 'members'
+    tab_id = db.Column('tab_id', db.Integer, primary_key=True, nullable=False)
+    vk_id = db.Column('vk_id', db.Integer, nullable=False)
+    first_name = db.Column('first_name', db.Text, nullable=False)
+    last_name = db.Column('last_name', db.Text, nullable=False)
+    sex = db.Column('sex', db.Integer, nullable=False)
+    photo_link = db.Column('photo_link', db.Text, nullable=False)
+    rating = db.Column('rating', db.Float, nullable=False)
+
+    def __init__(self,  tab_id, vk_id, first_name, last_name, sex, photo_link, rating):
+        self.tab_id = tab_id
+        self.vk_id = vk_id
+        self.first_name = first_name
+        self.last_name = last_name
+        self.sex = sex
+        self.photo_link = photo_link
+        self.rating = rating
+
 
 # Ensure responses are not cached
 

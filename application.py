@@ -84,15 +84,7 @@ def index_post():
     # Getting ajax response via json
     data = request.get_json()
 
-    # Checking
-    if data["id"] == "left":
-        val1 = 1
-        val2 = 0
-    else:
-        val1 = 0
-        val2 = 1
-
-    ratings = elo_rate(mem1.rating, mem2.rating, val1, val2)
+    ratings = elo_rate(mem1.rating, mem2.rating, data["s1"], data["s2"])
     j = 0
     for i in ratings:
         girl = Members.query.filter_by(tab_id=link_list[j].un_id).first()
@@ -127,11 +119,11 @@ def github():
 # Elo rating algorithm
 # It is greatly explained in this video:
 # https://www.youtube.com/watch?v=GTaAWtuLHuo&index=4&list=LLwfqVIYgpcUBxvjAdSkO05w
-def elo_rate(rate1, rate2, val1, val2):
+def elo_rate(rate1, rate2, s1, s2):
     E1 = 1/(1 + pow(10, ((rate1 - rate2)/400)))
     E2 = 1/(1 + pow(10, ((rate2 - rate1)/400)))
 
-    rate1_new = rate1 + 32*(val1 - E1)
-    rate2_new = rate2 + 32 * (val2 - E2)
+    rate1_new = rate1 + 32*(s1 - E1)
+    rate2_new = rate2 + 32 * (s2 - E2)
 
     return [rate1_new, rate2_new]

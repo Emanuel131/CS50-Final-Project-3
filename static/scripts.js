@@ -23,9 +23,20 @@ function imageChange(value) {
 $(document).ready(function() {
 	$("button").click(function(event) {
 		event.preventDefault();
+		var s1 = 0;
+		var s2 = 0;
 		var value = $(this).val();
+		if (value == "left") {
+			s1 = 1;
+			s2 = 0
+		} else {
+			s1 = 0;
+			s2 = 1;
+		};
+
 		var postData = {
-			id: value
+			s1: s1,
+			s2: s2
 		}
 
 		$.ajax({

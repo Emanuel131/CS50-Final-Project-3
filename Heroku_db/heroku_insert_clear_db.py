@@ -6,8 +6,8 @@ from heroku_declaritive_db import Base, Members
 
 # Connecting to a Heroku db
 engine = create_engine(
-    'url to your db',
-    echo=False)
+    'your url',
+    echo=True)
 
 # Binding engine to a Base class
 Base.metadata.bind = engine
@@ -20,7 +20,7 @@ session = DBSession()
 def main():
 
     # Assigned token var
-    token = 'your vk api token'
+    token = 'aa34d59868d72a146a250d1832c2b08519e79a34fdfc2b6f27d5ad44b2b100e0d5492c26166c5a6aed028'
 
     # Creating session using vk_requests
     api = vk_requests.create_api(service_token=token, scope=['friends', 'photos', 'groups', 'offline'], api_version='5.92')

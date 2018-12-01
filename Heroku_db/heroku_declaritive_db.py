@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, Column, Integer, Text, Float
 from sqlalchemy.ext.declarative import declarative_base
 
 # Connecting to a HEROKU postgresql
-engine = create_engine('url to your db', echo=True)
+engine = create_engine('your url', echo=True)
 
 # Creating a base class
 Base = declarative_base()

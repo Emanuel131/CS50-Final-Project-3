@@ -15,7 +15,8 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Path to the Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./phpLiteAdmin/HSE.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./phpLiteAdmin/HSE.db' - Local
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'url for your Heroku db'
 
 # Initiating db object
 db = SQLAlchemy(app)

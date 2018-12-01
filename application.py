@@ -15,8 +15,10 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Path to the Database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./phpLiteAdmin/HSE.db' - Local
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'url for your Heroku db'
+# Local
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./phpLiteAdmin/HSE.db'
+# HEROKU
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'your url'
 
 # Initiating db object
 db = SQLAlchemy(app)
@@ -108,7 +110,7 @@ def hot():
 # Displaying my personal choice in personal.html
 @app.route("/personal", methods=["GET"])
 def personal():
-    link = "https://pp.userapi.com/c837221/v837221656/56977/sivXGmIbPEs.jpg"
+    link = "https://pp.userapi.com/c847020/v847020538/1427a1/lVggmbf3o-U.jpg"
     return render_template("personal.html", link=link)
 
 
@@ -116,6 +118,12 @@ def personal():
 @app.route("/github", methods=["GET"])
 def github():
     return redirect("https://github.com/Snowfighter/CS50-Final-Project")
+
+
+# Displaying credits
+@app.route("/credits", methods=["GET"])
+def credit():
+    return render_template("credits.html")
 
 
 # Elo rating algorithm

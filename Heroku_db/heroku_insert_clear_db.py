@@ -6,7 +6,7 @@ from heroku_declaritive_db import Base, Members
 
 # Connecting to a Heroku db
 engine = create_engine(
-    'postgres://fdtszdbxmfjcjb:ba083b52f3aa0e511d9df06728eabc4c3e40da051c92f868cd853bf5b82f17e2@ec2-54-204-36-249.compute-1.amazonaws.com:5432/d6n304k4nc5r3',
+    'url to your db',
     echo=False)
 
 # Binding engine to a Base class
@@ -18,9 +18,9 @@ session = DBSession()
 
 
 def main():
-    """
+
     # Assigned token var
-    token = 'aa34d59868d72a146a250d1832c2b08519e79a34fdfc2b6f27d5ad44b2b100e0d5492c26166c5a6aed028'
+    token = 'your vk api token'
 
     # Creating session using vk_requests
     api = vk_requests.create_api(service_token=token, scope=['friends', 'photos', 'groups', 'offline'], api_version='5.92')
@@ -43,11 +43,12 @@ def main():
     db_upload(api.groups.getMembers(group_id='hseofficial', sort='id_asc', offset=(i - 1000),
                                         fields=['sex', 'photo_max_orig'],
                                         count=(count - i + 1000)))
-    """
+
     # Cleaning the database
     cleanup()
 
 
+# Upload function
 def db_upload(resp):
     for i in resp['items']:
         new_member = Members(vk_id=i.get('id'), first_name=i.get('first_name'), last_name=i.get('last_name'), sex=i.get("sex"), photo_link=i.get("photo_max_orig"))

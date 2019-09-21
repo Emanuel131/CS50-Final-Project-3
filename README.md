@@ -22,7 +22,7 @@
 -   [Structure](#structure)
     -   [Database](#phpLiteAdmin)
     -   [VK](#vk)
-    -   [Application](#application.py & member.py)
+    -   [Application](#application.py)
 
 ## Idea
 
@@ -65,5 +65,5 @@ Below I give a detailed description of all the project, so feel free to use it a
 
 ### VK
 
-### application.py & member.py
+### application.py
 

@@ -10,5 +10,5 @@
 
 :star: Star me on GitHub — just for fun and motivativation :grinning:
 
-[HSE SMASH](https://secure-island-71749.herokuapp.com)
+[HSE SMASH](https://secure-island-71749.herokuapp.com) is my final project for Harvard CS50 online course. It is a web app that allows you to compare girls by there profile photos & find the hottest one :fire: :fire: :fire: :fire: :smirk: :smirk: :smirk: :smirk:
 

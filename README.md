@@ -73,44 +73,34 @@ The snipet of resulting "members" table:
 | 	2	 | 270	 | Irina	  |   Rybakova	    | 1	  | https://pp.userapi.com/c629116/v629116270/14349/NivavpUia9k.jpg?ava=1	                    | 2.0 |
 | 	5	 | 509	 | Alyona	  |   Vershinina	| 1	  | https://pp.userapi.com/c852128/v852128160/2b6c0/pnVQlSodoEE.jpg?ava=1	                    | 0.0 |
 | 	7	 | 605	 | Lena	      |   Udodova	    | 1	  | https://sun1-11.userapi.com/kDDxts6O4jouBIScMt4iH7nRVT_JKxzKkv9gaw/_IWoF3dFzlA.jpg?ava=1	| 0.0 |
+| 	8	 | 680	 | Katya	  |   Semenko	    | 1	  | https://pp.userapi.com/c627316/v627316680/43095/ZVEhuFxe59Y.jpg?ava=1	                    | 0.0 |
+| 	9	 | 692	 | Liza	      |   Kulik	        | 1	  | https://pp.userapi.com/c630416/v630416692/7446/Rbatb84-q9k.jpg?ava=1	                    | 0.0 |
+| 	13	 | 796	 | Alina	  |   Sazonova	    | 1	  | https://pp.userapi.com/c638923/v638923796/4ebfc/Pa1bYmNPZgE.jpg?ava=1	                    | 0.0 |
+| 	16	 | 896	 | Olga	      |   Borodulina	| 1	  | https://pp.userapi.com/c313/u00896/a_2f90c1d9.jpg?ava=1	                                    | 0.0 |
+| 	17	 | 905	 | Alina	  |   Yashina	    | 1	  | https://pp.userapi.com/c824504/v824504324/1a43e4/x0DNcr_UhG0.jpg?ava=1	                    | 0.0 |
+| 	19	 | 982	 | Natalia	  |   Koryakovtseva	| 1	  | https://pp.userapi.com/c622820/v622820982/3a9a4/pHC7A_lkhls.jpg?ava=1	                    | 0.0 |
+| 	21	 | 1066	 | Alina	  |   Kirnos	    | 1	  | https://pp.userapi.com/c625431/v625431066/15bbc/OKAT3H0lZVs.jpg?ava=1	                    | 0.0 |
+| 	23	 | 1360	 | Dinara	  |   Izmaylova	    | 1	  | https://pp.userapi.com/c9984/u01360/a_0dcbc0a1.jpg?ava=1	                                | 0.0 |
+| 	25	 | 1422	 | Masha	  |   Egorova	    | 1	  | https://pp.userapi.com/c10566/u01422/a_09cc6b8c.jpg?ava=1	                                | 0.0 |
+| 	30	 | 2928	 | Polina	  |   Dolgova	    | 1	  | https://sun1-2.userapi.com/922oInynbOfu9uHPjN4pgLqvTnYThQ5FhubABA/kFhlyKTN8Mg.jpg?ava=1	    | 0.0 |
+| 	31	 | 3212	 | Olga	      |   Kornaukhova	| 1	  | https://pp.userapi.com/c9322/u03212/a_d2c6104c.jpg?ava=1	                                | 0.0 |
+| 	32	 | 3233	 | Irina	  |   Lobuzova	    | 1	  | https://pp.userapi.com/c9359/u03233/a_d7bff568.jpg?ava=1	                                | 0.0 |
+| 	33	 | 3264	 | Elena	  |   Lebedinskaya	| 1	  | https://pp.userapi.com/c638429/v638429264/3342d/wIMoK_pBxdE.jpg?ava=1	                    | 0.0 |
+| 	35	 | 3807	 | Karina	  |   Afonskaya	    | 1	  | https://pp.userapi.com/c637419/v637419653/5fa99/urx9eBmH4tM.jpg?ava=1	                    | 0.0 |
+| 	36	 | 3950	 | Tatyana	  |   Pashaeva	    | 1	  | https://pp.userapi.com/c637823/v637823950/55f05/7-MsFOpNqEg.jpg?ava=1	                    | 0.0 |
+| 	38	 | 4223	 | Anna	      |   Shklyaeva	    | 1	  | https://pp.userapi.com/c636119/v636119223/18e9d/nRai9GVi348.jpg?ava=1	                    | 0.0 |
+| 	42	 | 4986	 | Yulia	  |   Sannikova	    | 1	  | https://pp.userapi.com/c834200/v834200492/6ad1c/8kFYLvowp98.jpg?ava=1	                    | 0.0 |
+| 	43	 | 5323	 | Alexandra  |	Kriventsova	    | 1	  | https://pp.userapi.com/c844417/v844417151/a85f9/nZJ1rxD8HzU.jpg?ava=1	                    | 0.0 |
+| 	44	 | 5344	 | Yulenka	  |   Markova	    | 1	  | https://sun1-16.userapi.com/f75DUNhVCcRuHen59C6y179l2CoZlTgn9zH5SA/MCRC6q1_CMA.jpg?ava=1	| 0.0 |
+| 	45	 | 5530	 | Ekaterina  |	Matrosova	    | 1	  | https://pp.userapi.com/c841638/v841638562/72497/zp8BVlx7nwU.jpg?ava=1	                    | 0.0 |
+| 	46	 | 5757	 | Yulia	  |   Monakhova	    | 1	  | https://pp.userapi.com/c630318/v630318757/38d52/HRH3f175FGQ.jpg?ava=1	                    | 0.0 |
+| 	48	 | 5863	 | Rita	      |   Podkhalyuzina	| 1	  | https://pp.userapi.com/c846018/v846018569/c2894/vVY7yWjxkpM.jpg?ava=1	                    | 0.0 |
+| 	49	 | 5948	 | Katerina	  |   Mordovina	    | 1	  | https://pp.userapi.com/c604627/v604627948/24e92/vq9_oTpvMfE.jpg?ava=1	                    | 0.0 |
+| 	50	 | 6082	 | Lena	      |   Kropotova	    | 1	  | https://pp.userapi.com/c845524/v845524805/12c3e5/3qetDzlo9EE.jpg?ava=1	                    | 0.0 |
+| 	52	 | 6244	 | Tatyana	  |   Tarasova	    | 1	  | https://sun1-20.userapi.com/c831508/v831508925/15ace9/CG0Gq1MC9_s.jpg?ava=1	                | 0.0 |
+| 	53	 | 6616	 | Elena	  |   Ustinova	    | 1	  | https://pp.userapi.com/c840129/v840129678/6d8cc/g54CSnZ1v5M.jpg?ava=1	                    | 0.0 |
+| 	58	 | 6998	 | Irina	  |   Lesovskaya	| 1	  | https://pp.userapi.com/c1035/u06998/a_ab0d0a78.jpg?ava=1	                                | 0.0 |
 
-
-
-
-
-
-	| tab_id | vk_id | first_name |	last_name	    | sex | photo_link	                                                                                | rating |
-    | ------ | ----- | ---------- | --------------- | --- | ------------------------------------------------------------------------------------------- | --- |
-	| 	2	 | 270	 | Irina	  |   Rybakova	    | 1	  | https://pp.userapi.com/c629116/v629116270/14349/NivavpUia9k.jpg?ava=1	                    | 2.0 |
-	| 	5	 | 509	 | Alyona	  |   Vershinina	| 1	  | https://pp.userapi.com/c852128/v852128160/2b6c0/pnVQlSodoEE.jpg?ava=1	                    | 0.0 |
-	| 	7	 | 605	 | Lena	      |   Udodova	    | 1	  | https://sun1-11.userapi.com/kDDxts6O4jouBIScMt4iH7nRVT_JKxzKkv9gaw/_IWoF3dFzlA.jpg?ava=1	| 0.0 |
-	| 	8	 | 680	 | Katya	  |   Semenko	    | 1	  | https://pp.userapi.com/c627316/v627316680/43095/ZVEhuFxe59Y.jpg?ava=1	                    | 0.0 |
-	| 	9	 | 692	 | Liza	      |   Kulik	        | 1	  | https://pp.userapi.com/c630416/v630416692/7446/Rbatb84-q9k.jpg?ava=1	                    | 0.0 |
-	| 	13	 | 796	 | Alina	  |   Sazonova	    | 1	  | https://pp.userapi.com/c638923/v638923796/4ebfc/Pa1bYmNPZgE.jpg?ava=1	                    | 0.0 |
-	| 	16	 | 896	 | Olga	      |   Borodulina	| 1	  | https://pp.userapi.com/c313/u00896/a_2f90c1d9.jpg?ava=1	                                    | 0.0 |
-	| 	17	 | 905	 | Alina	  |   Yashina	    | 1	  | https://pp.userapi.com/c824504/v824504324/1a43e4/x0DNcr_UhG0.jpg?ava=1	                    | 0.0 |
-	| 	19	 | 982	 | Natalia	  |   Koryakovtseva	| 1	  | https://pp.userapi.com/c622820/v622820982/3a9a4/pHC7A_lkhls.jpg?ava=1	                    | 0.0 |
-	| 	21	 | 1066	 | Alina	  |   Kirnos	    | 1	  | https://pp.userapi.com/c625431/v625431066/15bbc/OKAT3H0lZVs.jpg?ava=1	                    | 0.0 |
-	| 	23	 | 1360	 | Dinara	  |   Izmaylova	    | 1	  | https://pp.userapi.com/c9984/u01360/a_0dcbc0a1.jpg?ava=1	                                | 0.0 |
-	| 	25	 | 1422	 | Masha	  |   Egorova	    | 1	  | https://pp.userapi.com/c10566/u01422/a_09cc6b8c.jpg?ava=1	                                | 0.0 |
-	| 	30	 | 2928	 | Polina	  |   Dolgova	    | 1	  | https://sun1-2.userapi.com/922oInynbOfu9uHPjN4pgLqvTnYThQ5FhubABA/kFhlyKTN8Mg.jpg?ava=1	    | 0.0 |
-	| 	31	 | 3212	 | Olga	      |   Kornaukhova	| 1	  | https://pp.userapi.com/c9322/u03212/a_d2c6104c.jpg?ava=1	                                | 0.0 |
-	| 	32	 | 3233	 | Irina	  |   Lobuzova	    | 1	  | https://pp.userapi.com/c9359/u03233/a_d7bff568.jpg?ava=1	                                | 0.0 |
-	| 	33	 | 3264	 | Elena	  |   Lebedinskaya	| 1	  | https://pp.userapi.com/c638429/v638429264/3342d/wIMoK_pBxdE.jpg?ava=1	                    | 0.0 |
-	| 	35	 | 3807	 | Karina	  |   Afonskaya	    | 1	  | https://pp.userapi.com/c637419/v637419653/5fa99/urx9eBmH4tM.jpg?ava=1	                    | 0.0 |
-	| 	36	 | 3950	 | Tatyana	  |   Pashaeva	    | 1	  | https://pp.userapi.com/c637823/v637823950/55f05/7-MsFOpNqEg.jpg?ava=1	                    | 0.0 |
-	| 	38	 | 4223	 | Anna	      |   Shklyaeva	    | 1	  | https://pp.userapi.com/c636119/v636119223/18e9d/nRai9GVi348.jpg?ava=1	                    | 0.0 |
-	| 	42	 | 4986	 | Yulia	  |   Sannikova	    | 1	  | https://pp.userapi.com/c834200/v834200492/6ad1c/8kFYLvowp98.jpg?ava=1	                    | 0.0 |
-	| 	43	 | 5323	 | Alexandra  |	Kriventsova	    | 1	  | https://pp.userapi.com/c844417/v844417151/a85f9/nZJ1rxD8HzU.jpg?ava=1	                    | 0.0 |
-	| 	44	 | 5344	 | Yulenka	  |   Markova	    | 1	  | https://sun1-16.userapi.com/f75DUNhVCcRuHen59C6y179l2CoZlTgn9zH5SA/MCRC6q1_CMA.jpg?ava=1	| 0.0 |
-	| 	45	 | 5530	 | Ekaterina  |	Matrosova	    | 1	  | https://pp.userapi.com/c841638/v841638562/72497/zp8BVlx7nwU.jpg?ava=1	                    | 0.0 |
-	| 	46	 | 5757	 | Yulia	  |   Monakhova	    | 1	  | https://pp.userapi.com/c630318/v630318757/38d52/HRH3f175FGQ.jpg?ava=1	                    | 0.0 |
-	| 	48	 | 5863	 | Rita	      |   Podkhalyuzina	| 1	  | https://pp.userapi.com/c846018/v846018569/c2894/vVY7yWjxkpM.jpg?ava=1	                    | 0.0 |
-	| 	49	 | 5948	 | Katerina	  |   Mordovina	    | 1	  | https://pp.userapi.com/c604627/v604627948/24e92/vq9_oTpvMfE.jpg?ava=1	                    | 0.0 |
-	| 	50	 | 6082	 | Lena	      |   Kropotova	    | 1	  | https://pp.userapi.com/c845524/v845524805/12c3e5/3qetDzlo9EE.jpg?ava=1	                    | 0.0 |
-	| 	52	 | 6244	 | Tatyana	  |   Tarasova	    | 1	  | https://sun1-20.userapi.com/c831508/v831508925/15ace9/CG0Gq1MC9_s.jpg?ava=1	                | 0.0 |
-	| 	53	 | 6616	 | Elena	  |   Ustinova	    | 1	  | https://pp.userapi.com/c840129/v840129678/6d8cc/g54CSnZ1v5M.jpg?ava=1	                    | 0.0 |
-	| 	58	 | 6998	 | Irina	  |   Lesovskaya	| 1	  | https://pp.userapi.com/c1035/u06998/a_ab0d0a78.jpg?ava=1	                                | 0.0 |
 
 ### VK
 

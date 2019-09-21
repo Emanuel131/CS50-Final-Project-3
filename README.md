@@ -20,8 +20,9 @@
 
 -   [Idea](#idea)
 -   [Structure](#structure)
+    -   [VK](#vk)
 
-### Idea
+## Idea
 
 The idea of making such an app came to me after watching ["The Social Network"](https://www.imdb.com/title/tt1285016/) movie. Where Mark Zuckerberg gets pissed off by his ex girlfriend and, being a little bit drunk, creates FaceSmash, a web-app that allows to compare Harvard girls between each other, two at a time. 
 
@@ -29,4 +30,7 @@ I was not pissed by my ex, nor was I drunk, but decided to reimplement this app 
 
 Below I give a detailed description of all the project, so feel free to use it as a template for making such a prank in your own university :wink:
 
-### Structure
+## Structure
+.
+├──
+### VK

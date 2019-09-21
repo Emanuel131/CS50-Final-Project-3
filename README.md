@@ -32,12 +32,23 @@ Below I give a detailed description of all the project, so feel free to use it a
 
 ## Structure
 ```
-app
-└── screens
-    └── App
-        └── screens
-            ├── Admin
-            │   └── screens
+├── VK
+│   └── vk_export.py
+├── static
+│   ├── fonts
+│   │   └── SexyShoutFreeFont.ttf
+│   │   └── SexyShoutFreeFont.otf
+│   └── Jobs.jpg
+│   └── Jobs2.jpg
+│   └── Slushi.jpg
+│   └── scripts.js
+│   └── styles.css
+├── templates
+│   └── credits.html
+│   └── hottest.html
+│   └── index.html
+│   └── layout.html
+│   └── personal.html
             │       ├── Reports
             │       └── Users
             └── Course

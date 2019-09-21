@@ -69,6 +69,7 @@ I have decided to use [SQLite](https://www.sqlite.org/index.html) for this proje
 The snipet of resulting "members" table: 
 
 	| tab_id | vk_id | first_name |	last_name	    | sex | photo_link	                                                                                | rating |
+    | ------ | ----- | ---------- | --------------- | --- | ------------------------------------------------------------------------------------------- | --- |
 	| 	2	 | 270	 | Irina	  |   Rybakova	    | 1	  | https://pp.userapi.com/c629116/v629116270/14349/NivavpUia9k.jpg?ava=1	                    | 2.0 |
 	| 	5	 | 509	 | Alyona	  |   Vershinina	| 1	  | https://pp.userapi.com/c852128/v852128160/2b6c0/pnVQlSodoEE.jpg?ava=1	                    | 0.0 |
 	| 	7	 | 605	 | Lena	      |   Udodova	    | 1	  | https://sun1-11.userapi.com/kDDxts6O4jouBIScMt4iH7nRVT_JKxzKkv9gaw/_IWoF3dFzlA.jpg?ava=1	| 0.0 |

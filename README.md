@@ -17,8 +17,12 @@
 </a>
 
 ## Table of contents
--[Idea](#idea)
--[Structure](#structure)
+
+-   [Idea](#idea)
+-   [Structure](#structure)
+
 ### Idea
+
 The idea of making such an app came to me after watching ["Social Network"](https://www.imdb.com/title/tt1285016/)
+
 ### Structure

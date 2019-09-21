@@ -68,6 +68,12 @@ I have decided to use [SQLite](https://www.sqlite.org/index.html) for this proje
 
 The snipet of resulting "members" table: 
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 	| tab_id | vk_id | first_name |	last_name	    | sex | photo_link	                                                                                | rating |
     | ------ | ----- | ---------- | --------------- | --- | ------------------------------------------------------------------------------------------- | --- |
 	| 	2	 | 270	 | Irina	  |   Rybakova	    | 1	  | https://pp.userapi.com/c629116/v629116270/14349/NivavpUia9k.jpg?ava=1	                    | 2.0 |

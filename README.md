@@ -8,5 +8,7 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+:star: Star me on GitHub — just for fun and motivativation :grinning:
 
-Recreation of FaceSmash
+[HSE SMASH](https://secure-island-71749.herokuapp.com)
+

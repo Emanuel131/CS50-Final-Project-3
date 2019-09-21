@@ -28,12 +28,6 @@ def main():
     # Assigned token var
     token = 'aa34d59868d72a146a250d1832c2b08519e79a34fdfc2b6f27d5ad44b2b100e0d5492c26166c5a6aed028'
 
-    # List of params needed for the request
-    params = {"group_id": 1, "count": 10, "fields": ['sex'], "v": 5.92, "access_token": token}
-
-    # Making a GET request
-    r = requests.get('https://api.vk.com/method/groups.getMembers', params=params)
-
     # Creating session using vk_requests
     api = vk_requests.create_api(service_token=token, scope=['friends', 'photos', 'groups', 'offline'], api_version='5.92')
 
@@ -58,14 +52,6 @@ def main():
 
     # Cleaning the database
     cleanup()
-
-    """
-    link_l = []
-    for row in cur.execute("SELECT * FROM members ORDER BY RANDOM() LIMIT 5"):
-        print(row[5])
-        link_l.append(row[5])
-    """
-
 
 # Database upload func
 def db_upload(resp):

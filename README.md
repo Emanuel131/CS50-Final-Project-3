@@ -62,6 +62,9 @@ Below I give a detailed description of all the project, so feel free to use it a
 ```
 
 ### phpLiteAdmin
+Before writing my web app I need a database with my girls. For that I need to decide what tools to use and what fields to create for each member. 
+
+I have decided to use [SQLite](https://www.sqlite.org/index.html) for this project and [phpLiteAdmin](https://www.phpliteadmin.org) for local management and testing. The latter was utilized for initial cretion of the db, table and fields, though it could be done programmatically in Python. Here is the link for how to start a local phpLiteAdmin server "https://bitbucket.org/phpliteadmin/public/wiki/NoWebserver"   
 
 ### VK
 

@@ -20,7 +20,9 @@
 
 -   [Idea](#idea)
 -   [Structure](#structure)
+    -   [Database](#phpLiteAdmin)
     -   [VK](#vk)
+    -   [Application](#application.py & member.py)
 
 ## Idea
 
@@ -32,10 +34,10 @@ Below I give a detailed description of all the project, so feel free to use it a
 
 ## Structure
 ```
-├── VK
-│   └── vk_export.py
 ├── phpLiteAdmin
 │   └── HSE.db
+├── VK
+│   └── vk_export.py
 
 ├── application.py
 ├── member.py
@@ -59,4 +61,9 @@ Below I give a detailed description of all the project, so feel free to use it a
 
 ```
 
+### phpLiteAdmin
+
 ### VK
+
+### application.py & member.py
+

@@ -49,11 +49,11 @@ Below I give a detailed description of all the project, so feel free to use it a
 │   └── index.html
 │   └── layout.html
 │   └── personal.html
-            │       ├── Reports
-            │       └── Users
-            └── Course
-                └── screens
-                    └── Assignments
+├── application.py
+├── member.py
+├── LICENSE
+├── README.md
+
 ```
 
 ### VK

@@ -32,12 +32,13 @@ Below I give a detailed description of all the project, so feel free to use it a
 
 ## Structure
 ```
-├── application.py
-├── member.py
 ├── VK
 │   └── vk_export.py
 ├── phpLiteAdmin
 │   └── HSE.db
+
+├── application.py
+├── member.py
 ├── templates
 │   └── credits.html
 │   └── hottest.html

@@ -31,13 +31,18 @@ I was not pissed by my ex, nor was I drunk, but decided to reimplement this app 
 Below I give a detailed description of all the project, so feel free to use it as a template for making such a prank in your own university :wink:
 
 ## Structure
-.
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
+```
+app
+└── screens
+    └── App
+        └── screens
+            ├── Admin
+            │   └── screens
+            │       ├── Reports
+            │       └── Users
+            └── Course
+                └── screens
+                    └── Assignments
+```
 
 ### VK

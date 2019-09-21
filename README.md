@@ -27,4 +27,6 @@ The idea of making such an app came to me after watching ["The Social Network"](
 
 I was not pissed by my ex, nor was I drunk, but decided to reimplement this app using Python as a backend language for my Flask Server and JS/HTML/CSS for my pages. Being a HSE student I have decided to use VK society for getting the profile pages of the girls from my university. 
 
+Below I give a detailed description of all the project, so feel free to use it as a template for making such a prank in your own university :wink:
+
 ### Structure

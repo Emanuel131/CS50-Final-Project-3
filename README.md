@@ -32,8 +32,18 @@ Below I give a detailed description of all the project, so feel free to use it a
 
 ## Structure
 ```
+├── application.py
+├── member.py
 ├── VK
 │   └── vk_export.py
+├── phpLiteAdmin
+│   └── HSE.db
+├── templates
+│   └── credits.html
+│   └── hottest.html
+│   └── index.html
+│   └── layout.html
+│   └── personal.html
 ├── static
 │   ├── fonts
 │   │   └── SexyShoutFreeFont.ttf
@@ -43,14 +53,6 @@ Below I give a detailed description of all the project, so feel free to use it a
 │   └── Slushi.jpg
 │   └── scripts.js
 │   └── styles.css
-├── templates
-│   └── credits.html
-│   └── hottest.html
-│   └── index.html
-│   └── layout.html
-│   └── personal.html
-├── application.py
-├── member.py
 ├── LICENSE
 ├── README.md
 

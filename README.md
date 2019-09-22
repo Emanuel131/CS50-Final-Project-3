@@ -106,7 +106,7 @@ Getting the all the users from the [HSE Official Group](https://vk.com/hseoffici
 
 In the while loop I use `getMembers` method, where I specify `group_id`, `sort` order, `offset`, `fields` that I need for the db and `count` - max number of users I can get per one request.
 
-Next I use `db_upload` function for populating our local db and print into console for error checking. I also had an issue with "making too many requests" bugs, so I used `sleep()` function for a little pause in execution. After that I increment `i`, which is my offset variable.
+Next I use `db_upload` function for populating my local db and print into console for error checking. I also had an issue with "making too many requests" bugs, so I used `sleep()` function for a little pause in execution. After that I increment `i`, which is my offset variable.
 
 In the end of the `main` function I make one last API call for the rest of the users (I use 1000 as the increment, but the number of users is not a round one). I also use a `cleanup` function for beautifying the database. 
 
@@ -135,6 +135,16 @@ def main():
 ```
 
 #### db_upload
+`db_upload` function gets a response from the API request and for every user in my 1000 returned ones executes an insertion into my "members" table. For this I utilize the `cursor` which I have defined earlier and using an `execute` method I write a simple query. Also never forget to do `conn.commit()` for saving the changes (reminds me of a `git commit` command).   
+
+```python
+def db_upload(resp):
+    for i in resp["items"]:
+        cur.execute("INSERT INTO members (vk_id, first_name, last_name, sex, photo_link) VALUES (:id, :f_n, :l_n, :s, :p_l)",
+                    {"id": i.get('id'), "f_n": i.get('first_name'), "l_n": i.get('last_name'), "s": i.get("sex"), "p_l": i.get("photo_max_orig")})
+
+        conn.commit()
+```
 
 #### cleanup
 

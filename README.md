@@ -80,6 +80,7 @@ The snipet of resulting "members" table:
 | 	17	 | 905	 | Alina	  |   Yashina	    | 1	  | https://pp.userapi.com/c824504/v824504324/1a43e4/x0DNcr_UhG0.jpg?ava=1	                    | 0.0 |
 
 ### VK
+Now let's look at [vk_export.py](./VK/vk_export.py)
 
 ### application.py
 

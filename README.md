@@ -28,6 +28,7 @@
     -   [Application](#application.py)
     -   [Scripts](#scripts.js)
     -   [Templates](#templates)
+    -   [HEROKU](#heroku)
 
 ## Idea
 
@@ -386,3 +387,11 @@ $(document).ready(function() {
 ### Templates
 
 In [templates](./templates/) I have all html pages made in [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/). If any given one needs to be passed a variable from [application.py](./application.py) I use [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) conventions for that. 
+
+
+### HEROKU
+
+In [Heroku_db](./Heroku_db) I have inserted code for making and populating a remote database on HEROKU. The files do not really differ a lot from [vk_export.py](./VK/vk_export_py), except for the remote urls. You also need to create not an SQLite db but HEROKU PostgreSQL, which is done in [heroku_declaritive_db.py](./Heroku_db/heroku_declaritive_db.py).
+
+For more information about uploading your personal web app on HEROKU warch this video:
+https://www.youtube.com/watch?v=4_RYQJfiuVU&list=PLVB8q5l3DXHczVis7sU4ziKTX3pAqe8c9&index=3

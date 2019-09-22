@@ -1,15 +1,4 @@
-# First we need to get an access token based on our application
-#
-# https://oauth.vk.com/authorize?client_id=token&display=page&redirect_uri=
-# https://oauth.vk.com/blank.html&scope=friends&response_type=token&v=5.52
-#
-# Application ID:	6760256
-#
-# scope = 2 (friends) + 4 (photos) + 262144 (groups) + 65536 (offline)
-#
-# Our access_token=aa34d59868d72a146a250d1832c2b08519e79a34fdfc2b6f27d5ad44b2b100e0d5492c26166c5a6aed028
-#
-# I am going to test request and vk_requests packages
+
 
 import vk_requests
 import requests
@@ -26,7 +15,7 @@ cur = conn.cursor()
 def main():
 
     # Assigned token var
-    token = 'aa34d59868d72a146a250d1832c2b08519e79a34fdfc2b6f27d5ad44b2b100e0d5492c26166c5a6aed028'
+    token = ''
 
     # Creating session using vk_requests
     api = vk_requests.create_api(service_token=token, scope=['friends', 'photos', 'groups', 'offline'], api_version='5.92')

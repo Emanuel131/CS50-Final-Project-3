@@ -304,3 +304,31 @@ def elo_rate(rate1, rate2, s1, s2):
 
     return [rate1_new, rate2_new]
 ```
+
+The last routes in my app to be discussed are pretty straightforward. 
+
+In the [hottest](./templates/hottest.html) I render a photo of a girl with the highest rating, which a get by making an ordering query to the table.
+
+In the [personal](./templates/personal.html) I have hardcoded my personal choice, `github` just redirects to this page and, finally in the [credits](./templates/credits.html) I have a thanking message to the CS50 staff.
+
+```python
+@app.route("/hottest", methods=["GET"])
+def hot():
+    girl = Members.query.order_by(desc(Members.rating)).first()
+
+    return render_template("hottest.html", link=girl.photo_link)
+
+@app.route("/personal", methods=["GET"])
+def personal():
+    link = "https://pp.userapi.com/c847020/v847020538/1427a1/lVggmbf3o-U.jpg"
+    return render_template("personal.html", link=link)
+
+@app.route("/github", methods=["GET"])
+def github():
+    return redirect("https://github.com/Snowfighter/CS50-Final-Project")
+
+
+@app.route("/credits", methods=["GET"])
+def credit():
+    return render_template("credits.html")
+```

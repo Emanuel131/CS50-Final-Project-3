@@ -96,5 +96,31 @@ conn = sqlite3.connect("../phpLiteAdmin/HSE.db")
 cur = conn.cursor()
 ```
 
+I the main function I get access to the api calls by using the `token` for my application which I got from registering the application with [VK API](https://vk.com/dev/access_token). In `create_api` I also specify the scope (with I would like to work in my app) and the api_version.
+
+``` python
+def main():
+
+    token = ...
+
+    api = vk_requests.create_api(service_token=token, scope=['friends', 'photos', 'groups', 'offline'], api_version='5.92')
+
+    count = api.groups.getMembers(group_id='hseofficial')['count']
+
+    i = 0
+    while i < count:
+        g_users = api.groups.getMembers(group_id='hseofficial', sort='id_asc', offset=i, fields=['sex', 'photo_max_orig', 'bday'],
+                                        count=1000)
+        db_upload(g_users)
+        print(g_users)
+        sleep(0.1)
+        i += 1000
+
+    db_upload(api.groups.getMembers(group_id='hseofficial', sort='id_asc', offset=(i-1000), fields=['sex', 'photo_max_orig'],
+                                    count=(count - i + 1000)))
+
+    cleanup()
+```
+
 ### application.py
 

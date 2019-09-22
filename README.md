@@ -236,4 +236,16 @@ mem2 = Member(0, 0, "")
 
 link_list = [mem1, mem2]
 ```
+In addition I'll also discuss the `Member` class in order to avoid futher confusion. It has only three parameters: 
+- un_id -- unique ID in "members" table
+- rating -- a double number
+- link -- a url of the profile picture
+
+```python
+class Member:
+    def __init__(self, un_id, rating, link):
+        self.un_id = un_id
+        self.rating = rating
+        self.link = link
+```
 

@@ -26,6 +26,7 @@
         - [Upload func](#db_upload)
         - [Cleanup](#cleanup)
     -   [Application](#application.py)
+    -   [Scripts](#scripts.js)
 
 ## Idea
 
@@ -332,3 +333,4 @@ def github():
 def credit():
     return render_template("credits.html")
 ```
+### Sripts.js

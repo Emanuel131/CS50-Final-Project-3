@@ -268,3 +268,20 @@ def index_get():
     return render_template("index.html", link1=mem1.link, link2=mem2.link, id1=mem1.un_id, id2=mem2.un_id)
 ```
 
+If the user visits the main ([index](./templates/index.html)) page via POST, so as by clicking on a button under the picture of the girl he/she likes more, my app needs to deal with how to give the girl the rating points and also reload the page to output the next random pair.
+
+```python
+@app.route("/", methods=["POST"])
+def index_post():
+    data = request.get_json()
+
+    ratings = elo_rate(mem1.rating, mem2.rating, data["s1"], data["s2"])
+    j = 0
+    for i in ratings:
+        girl = Members.query.filter_by(tab_id=link_list[j].un_id).first()
+        girl.rating = i
+        db.session.commit()
+        j += 1
+
+    return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
+```

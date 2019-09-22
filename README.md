@@ -270,6 +270,10 @@ def index_get():
 
 If the user visits the main ([index](./templates/index.html)) page via POST, so as by clicking on a button under the picture of the girl he/she likes more, my app needs to deal with how to give the girl the rating points and also reload the page to output the next random pair.
 
+Using JSON we get data from POST request, which has information about which picture the user has choosen. This data contains `s1` and `s2` coefficients, which correspond to the 1st and the 2nd profile picture and can be either 1 or 0. 
+
+Using the received coefficients and the current girls' ratings I calculate their new ratings using the Elo Rating Algorithm.  
+
 ```python
 @app.route("/", methods=["POST"])
 def index_post():

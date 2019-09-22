@@ -272,7 +272,8 @@ If the user visits the main ([index](./templates/index.html)) page via POST, so 
 
 Using JSON we get data from POST request, which has information about which picture the user has choosen. This data contains `s1` and `s2` coefficients, which correspond to the 1st and the 2nd profile picture and can be either 1 or 0. 
 
-Using the received coefficients and the current girls' ratings I calculate their new ratings using the Elo Rating Algorithm.  
+Using the received coefficients and the current girls' ratings I calculate their new ratings using the Elo Rating Algorithm and after that write the new numbers into the local database.
+In the end I dump a json that everything went without mistakes.
 
 ```python
 @app.route("/", methods=["POST"])
@@ -288,4 +289,18 @@ def index_post():
         j += 1
 
     return json.dumps({'success': True}), 200, {'ContentType': 'application/json'}
+```
+#### Elo Rating Algorithm
+
+Basically it means that if you have two girls, where one has a high rating and another one has a low rating and, supposedly, the girl with highest rating wins, she gets less points in comparison with the situation, when the girl with the low rating wins. It is a coommon rating system in strategic games and it is best explained in this video: https://www.youtube.com/watch?v=GTaAWtuLHuo&index=4&list=LLwfqVIYgpcUBxvjAdSkO05w
+
+```python
+def elo_rate(rate1, rate2, s1, s2):
+    E1 = 1/(1 + pow(10, ((rate1 - rate2)/400)))
+    E2 = 1/(1 + pow(10, ((rate2 - rate1)/400)))
+
+    rate1_new = rate1 + 32*(s1 - E1)
+    rate2_new = rate2 + 32 * (s2 - E2)
+
+    return [rate1_new, rate2_new]
 ```

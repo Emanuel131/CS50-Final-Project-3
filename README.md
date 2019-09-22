@@ -335,6 +335,14 @@ def credit():
 ```
 ### Sripts.js
 
+In [scripts.js](./static/scripts.js) I have a function that figures out what to do when the left or right button of choice is clicked in [index.html](./templates/index.html).
+
+ - I use `$(document).ready()` to make sure that the page is safely loaded. 
+ - `$("button").click()` checks if any button is pressed and executes a function
+ - `event.preventDefault()` prevents from reloading the page
+
+  The rest of the code checks if `right` or `left` button was clicked on and assigns the right numbers to `s1` and `s2`. Then it makes an asynchronous POST request using [ajax](https://api.jquery.com/jquery.ajax/) sending information to the main route, which the app processes in `@app.route("/", methods=["POST"])`
+
 ```javascript
 $(document).ready(function() {
 	$("button").click(function(event) {

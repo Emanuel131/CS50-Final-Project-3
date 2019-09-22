@@ -188,7 +188,7 @@ Then I make some default initial configs:
 3. Disable commit tracking (Turn off Flask-SQLAlchemy event system for saving resources)
 4. Adding path to the database (Local or Remote, Ex. Heroku DB)
 5. Initiating DB object
-6. Creating a table class in order to read/write into the database 
+6. Creating a [table class](https://flask.palletsprojects.com/en/1.1.x/patterns/sqlalchemy/) in order to read/write into the database 
 
 ```python
 app = Flask(__name__)

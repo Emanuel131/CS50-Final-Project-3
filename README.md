@@ -148,5 +148,26 @@ def db_upload(resp):
 
 #### cleanup
 
+The `cleanup` function makes some changes to the table through a number of SQL queries:
+
+1. Deletes all DELETED accounts
+2. Deletes all males (`sex` parameter equals 2)
+3. Deletes all users with no picture
+4. Deletes all users with deactivated profile picture
+
+```python
+def cleanup():
+
+    cur.execute("DELETE FROM members WHERE first_name = 'DELETED'")
+
+    cur.execute("DELETE FROM members WHERE sex = 2")
+
+    cur.execute("DELETE FROM members WHERE photo_link = 'https://vk.com/images/camera_400.png?ava=1'")
+
+    cur.execute("DELETE FROM members WHERE photo_link = 'https://vk.com/images/deactivated_400.png'")
+
+    conn.commit()
+```
+
 ### application.py
 

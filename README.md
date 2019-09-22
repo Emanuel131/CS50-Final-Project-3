@@ -219,6 +219,21 @@ class Members(db.Model):
         self.sex = sex
         self.photo_link = photo_link
         self.rating = rating
+```
 
+Now let's look at the rest of the code with the `app` decorators, but before doing that I make sure that no responses are cached and make global vars for two compared girls using `Member` class.
+
+```python
+@app.after_request
+def after_request(response):
+    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    response.headers["Expires"] = 0
+    response.headers["Pragma"] = "no-cache"
+    return response
+
+mem1 = Member(0, 0, "")
+mem2 = Member(0, 0, "")
+
+link_list = [mem1, mem2]
 ```
 

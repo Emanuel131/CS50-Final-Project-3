@@ -83,10 +83,17 @@ The snipet of resulting "members" table:
 Now let's look at [vk_export.py](./VK/vk_export.py) which populates my database with girls. 
 
 I use [vk-requests](https://pypi.org/project/vk-requests/) package for making VK API calls and [sqlite3](https://docs.python.org/3/library/sqlite3.html) for making queries. 
+
 ``` python
 import vk_requests
 import sqlite3
 from time import sleep
+```
+Then I create a connect to the database and create a cursor for making queries.
+
+```python
+conn = sqlite3.connect("../phpLiteAdmin/HSE.db")
+cur = conn.cursor()
 ```
 
 ### application.py

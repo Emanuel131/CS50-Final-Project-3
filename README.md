@@ -22,6 +22,9 @@
 -   [Structure](#structure)
     -   [Database](#phpLiteAdmin)
     -   [VK](#vk)
+        - [Main](#main)
+        - [Upload func](#db_upload)
+        - [Cleanup](#cleanup)
     -   [Application](#application.py)
 
 ## Idea
@@ -95,6 +98,7 @@ Then I create a connect to the database and create a cursor for making queries.
 conn = sqlite3.connect("../phpLiteAdmin/HSE.db")
 cur = conn.cursor()
 ```
+#### Main
 
 I the `main` function I get access to the api calls by using the `token` for my application which I got from registering the application with [VK API](https://vk.com/dev/access_token). In `create_api` I also specify the `scope` (with I would like to work in my app) and the `api_version`.
 
@@ -129,6 +133,10 @@ def main():
 
     cleanup()
 ```
+
+#### db_upload
+
+#### cleanup
 
 ### application.py
 

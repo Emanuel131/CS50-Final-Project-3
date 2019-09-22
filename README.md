@@ -27,6 +27,7 @@
         - [Cleanup](#cleanup)
     -   [Application](#application.py)
     -   [Scripts](#scripts.js)
+    -   [Templates](#templates)
 
 ## Idea
 
@@ -381,3 +382,7 @@ $(document).ready(function() {
 	});
 });
 ```
+
+### Templates
+
+In [templates](./templates/) I have all html pages made in [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/). If any given one needs to be passed a variable from [application.py](./application.py) I use [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) conventions for that. 

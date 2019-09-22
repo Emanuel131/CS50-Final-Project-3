@@ -96,7 +96,15 @@ conn = sqlite3.connect("../phpLiteAdmin/HSE.db")
 cur = conn.cursor()
 ```
 
-I the main function I get access to the api calls by using the `token` for my application which I got from registering the application with [VK API](https://vk.com/dev/access_token). In `create_api` I also specify the scope (with I would like to work in my app) and the api_version.
+I the `main` function I get access to the api calls by using the `token` for my application which I got from registering the application with [VK API](https://vk.com/dev/access_token). In `create_api` I also specify the `scope` (with I would like to work in my app) and the `api_version`.
+
+Getting the all the users from the [HSE Official Group](https://vk.com/hseofficial) posed a little change, because I could only get 1000 users per one request. That is why I have decided to get the whole number of comminuty members first  and then, using the while loop, make requests with an `offset`. 
+
+In the while loop I use `getMembers` method, where I specify `group_id`, `sort` order, `offset`, `fields` that I need for the db and `count` - max number of users I can get per one request.
+
+Next I use `db_upload` function for populating our local db and print into console for error checking. I also had an issue with "making too many requests" bugs, so I used `sleep()` function for a little pause in execution. After that I increment `i`, which is my offset variable.
+
+In the end of the `main` function I make one last API call for the rest of the users (I use 1000 as the increment, but the number of users is not a round one). I also use a `cleanup` function for beautifying the database. 
 
 ``` python
 def main():

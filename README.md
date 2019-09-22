@@ -249,3 +249,24 @@ class Member:
         self.link = link
 ```
 
+Let's return back to [application.py](./application.py).
+
+If the user visits the main ([index](./templates/index.html)) page via GET, he/she gets presented with two random profile picture of girls, which the app gets by making a query to the "members" table. It assigns the corresponding values to the variables in `link_list` and, in the end renders a template with the right links and ids.
+
+```python
+@app.route("/", methods=["GET"])
+def index_get():
+    global link_list
+    global mem1
+    global mem2
+    i = 0
+    girls = Members.query.order_by(func.random()).limit(2)
+    for g in girls:
+        link_list[i].un_id = g.tab_id
+        link_list[i].link = g.photo_link
+        link_list[i].rating = g.rating
+        i += 1
+
+    return render_template("index.html", link1=mem1.link, link2=mem2.link, id1=mem1.un_id, id2=mem2.un_id)
+```
+

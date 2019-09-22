@@ -170,7 +170,23 @@ def cleanup():
 ```
 
 ### application.py
-This file is the route of our backend Flask server. It contains commands for every page we visit and the method we use to visit them (POST or GET).
+This file is the route of our backend Flask server. It contains commands for every page the user visits and the method the user uses to visit them (POST or GET).
 
-So at first we need to import [flask](https://flask.palletsprojects.com/en/1.1.x/) packsge for our server, [flask_sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/) for working with the database and also `json` and `Member` class from helping [member.py](./member.py).
+So at first I need to import [flask](https://flask.palletsprojects.com/en/1.1.x/) package for our server, [flask_sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/) for working with the database and also `json` and `Member` class from helping [member.py](./member.py).
+
+```python
+from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, redirect, render_template, request
+import json
+from member import Member
+```
+
+Then I make some default initial configs:
+
+1. Configure the application
+2. Ensure the templates are reloaded
+3. Disable commit tracking (Turn off Flask-SQLAlchemy event system for saving resources)
+4. Adding path to the database (Local or Remote, Ex. Heroku DB)
+5. Initiating DB object
+6. Creating a table class in order to read/write into the database 
 

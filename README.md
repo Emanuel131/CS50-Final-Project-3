@@ -257,8 +257,6 @@ If the user visits the main ([index](./templates/index.html)) page via GET, he/s
 @app.route("/", methods=["GET"])
 def index_get():
     global link_list
-    global mem1
-    global mem2
     i = 0
     girls = Members.query.order_by(func.random()).limit(2)
     for g in girls:

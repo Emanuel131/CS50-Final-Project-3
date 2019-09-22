@@ -3,6 +3,7 @@ from sqlalchemy import desc
 from sqlalchemy.sql import func
 from flask import Flask, redirect, render_template, request
 import json
+import sys
 from member import Member
 
 # Configure application
@@ -69,8 +70,6 @@ link_list = [mem1, mem2]
 @app.route("/", methods=["GET"])
 def index_get():
     global link_list
-    global mem1
-    global mem2
     i = 0
     girls = Members.query.order_by(func.random()).limit(2)
     for g in girls:
